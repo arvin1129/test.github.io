@@ -93,9 +93,9 @@
                 email: email.value,
                 comments: comments.value
             };
-
-            document.getElementById("myForm").reset();
             google.script.run.addNewRow(rowData);
+            document.getElementById("myForm").reset();
+            
             alert("成功上傳");
         }
 
