@@ -93,7 +93,7 @@
                 email: email.value,
                 comments: comments.value
             };
-            google.script.run.addNewRow(rowData);
+            google.script.run.addData(rowData);
             document.getElementById("myForm").reset();
             
             alert("成功上傳");
